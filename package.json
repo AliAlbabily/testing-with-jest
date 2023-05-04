@@ -1,0 +1,22 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "Projektet går ut på att skriva tester med jest.",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliAlbabily/testing-with-jest.git"
+  },
+  "author": "Ali",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AliAlbabily/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/AliAlbabily/testing-with-jest#readme"
+}
