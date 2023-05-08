@@ -32,3 +32,20 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+// Test 2
+test('Clicking peek-button after poping the last element in the stack shows undefined', async () => {
+    // Pop an element from the stack
+    let popButton = await driver.findElement(By.id('pop'));
+    await popButton.click();
+
+    let alert = await driver.switchTo().alert();
+    await alert.accept();
+
+    let peekButton = await driver.findElement(By.id('peek'));
+    await peekButton.click();
+
+    // Check if the stack remains empty
+    let stack = await driver.findElement(By.id('top_of_stack')).getText();
+    expect(stack).toEqual("n/a");
+});
