@@ -23,5 +23,5 @@ test('pop on stack will return the expected value', () => {
     stack.push("A");
     stack.push("B");
     stack.pop();
-    expect(stack.peek()).toBe("B");
+    expect(stack.peek()).toBe("A");
 });

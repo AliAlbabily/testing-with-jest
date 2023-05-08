@@ -47,5 +47,5 @@ test('Clicking peek-button after poping the last element in the stack shows unde
 
     // Check if the stack remains empty
     let stack = await driver.findElement(By.id('top_of_stack')).getText();
-    expect(stack).toEqual("n/a");
+    expect(stack).toEqual("undefined");
 });
